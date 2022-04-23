@@ -8,6 +8,6 @@
 
 ## Mobile version
 
-<div align="center">
+<div align="center" width="400">
     <img src="./public/IMG_7688.PNG" alt="application for currency exchange" />
 </div>
