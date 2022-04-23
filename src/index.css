@@ -15,3 +15,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@layer base {
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+}
+
+@layer components {
+  .tw-field {
+    @apply block w-full rounded-lg border p-2.5 focus:border-blue-500 focus:ring-blue-500 border-gray-500 bg-gray-600 text-white placeholder-gray-400 sm:text-sm;
+  }
+
+  .animation-pause{
+    animation-play-state: paused 
+  }
+}
